@@ -64,7 +64,7 @@ public class Login {
 				String expectedTitle="Your";
 				String actualTitle=driver.getTitle();
 				try {
-				Assert.assertEquals(actualTitle,expectedTitle);
+				Assert.assertTrue(driver.findElement(By.xpath(//*[@id='login_button_container']/div/form/div[3]/h3,'Username and Password do not match any user in this service")).isDisplayed());
 				}
 				catch(Throwable e)
 				{
